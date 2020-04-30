@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+
+  stock-recording:
+    container_name: stock-recording
+    image: stock-recording:latest
+    build: ./
+    networks:
+      - mysqlnet
+    ports:
+      - "3000:3000/tcp"
+    expose: 
+      - "3000/tcp"
+
+networks:
+
+  mysqlnet:
+    external: true

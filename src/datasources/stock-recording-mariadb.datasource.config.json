@@ -1,0 +1,10 @@
+{
+  "name": "stock_recording_mariadb",
+  "connector": "mysql",
+  "url": "",
+  "host": "mysql-server",
+  "port": 3306,
+  "user": "stock-recording",
+  "password": "FIXME",
+  "database": "stock_recording"
+}
